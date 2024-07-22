@@ -68,6 +68,7 @@ section {
     align-items: center;
     margin: .5rem auto;
     height: 100vh;
+
 }
 
 .main h1 {
@@ -196,6 +197,7 @@ section {
     align-items: start;
     display: flex;
     flex-direction: column;
+
 }
 #About h1{
     color: #f0bf6c;
@@ -219,6 +221,47 @@ section {
 .About_cont i{
     color: #f0bf6c;
     font-size: 2rem;
+}
+#Skills{
+    height: 100vh;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#Skills h1{
+    color: #ffffff;
+    font-size: 3rem;
+    margin-top: 8rem;
+}
+.skill{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 3rem;
+}
+.skillitem{
+    margin: 1rem;
+    height:10rem ;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #33383C;
+    gap: 1rem;
+    border-radius: .5rem;
+}
+.skillitem:hover{
+    background-color: #f0bf6c;
+}
+.skillitem img{
+    height: 50px;
+}
+.skillitem p{
+    color: whitesmoke;
+    font-weight: 700;
 }
 @keyframes backcolor {
 
@@ -297,7 +340,8 @@ section {
         height: fit-content;
     }
     #About{
-        height: 100vh;
+        min-height: 100vh;
+        height:fit-content;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -328,7 +372,46 @@ section {
         color: #f0bf6c;
         font-size: 2rem;
     }
-    
+    #Skills{
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #Skills h1{
+        color: #ffffff;
+        font-size: 3rem;
+        margin-top: 8rem;
+    }
+    .skill{
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding: 3rem;
+    }
+    .skillitem{
+        margin: 1rem;
+        height:10rem ;
+        width: 10rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #33383C;
+        gap: 1rem;
+        border-radius: .5rem;
+    }
+    .skillitem:hover{
+        background-color: #f0bf6c;
+    }
+    .skillitem img{
+        height: 50px;
+    }
+    .skillitem p{
+        color: whitesmoke;
+        font-weight: 700;
+    }
 
 }
 
