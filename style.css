@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: rgba(52, 53, 58, 255);
+  background: #101820ff;
   margin: auto;
 }
 
@@ -50,15 +50,21 @@ nav {
 }
 
 nav a {
-  color: rgb(255, 255, 255);
+  color: rgb(135, 135, 135);
   text-decoration: none;
   font-size: 0.97rem;
   font-weight: 600;
   padding: 0.4rem 1.3rem;
 }
+nav a:hover {
+  color: whitesmoke;
+}
 
 #click {
   display: none;
+}
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./accets/bg.jpeg);
 }
 
 .menu {
@@ -67,9 +73,9 @@ nav a {
 
 /*NAVBAR*/
 
-section {
+/* section {
   margin: 2rem 8.5rem;
-}
+} */
 
 .main {
   display: flex;
@@ -125,48 +131,6 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-/* IMAGE*/
-
-.images {
-  width: 25em;
-  height: 25em;
-  border-radius: 50%;
-  margin: auto;
-}
-
-.blue-bg-outer {
-  width: 25em;
-  height: 25em;
-  border-radius: 50%;
-  background: #33383c;
-  display: grid;
-  place-items: center;
-}
-
-.white-bg {
-  width: 21.875em;
-  height: 21.875em;
-  border-radius: 50%;
-  background: rgb(255, 255, 255);
-  display: grid;
-  place-items: center;
-}
-
-.blue-bg {
-  width: 18.75em;
-  height: 18.75em;
-  border-radius: 50%;
-  background: var(--primary-color);
-}
-
-.blue-bg img {
-  position: relative;
-  /* bottom: 30px;
-    right: 20px; */
-  width: 100%;
-  border-radius: 50%;
-}
-
 /*BUTTON*/
 .cv-btn {
   margin-top: 1.5rem;
@@ -198,9 +162,10 @@ section {
 #About {
   height: 100vh;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  margin: 2rem;
 }
 #About h1 {
   color: #f0bf6c;
@@ -209,7 +174,6 @@ section {
 .About_cont {
   height: max-content;
   width: 100%;
-  border: 1px solid white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
@@ -233,7 +197,7 @@ section {
   flex-direction: column;
 }
 #Skills h1 {
-  color: #ffffff;
+  color: #f0bf6c;
   font-size: 3rem;
   margin-top: 8rem;
 }
@@ -269,7 +233,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: 4s ease;
+  min-height: 100vh;
 }
 #projects button {
   background-color: #f0bf6c;
@@ -279,7 +243,7 @@ section {
   font-weight: 800;
 }
 #projects h1 {
-  color: #fcfcfc;
+  color: #f0bf6c;
   font-size: 3rem;
 }
 .project {
@@ -337,7 +301,7 @@ section {
 }
 #Experience h1 {
   font-size: 3rem;
-  color: white;
+  color: #f0bf6c;
   margin-top: 3rem;
 }
 .timeline {
@@ -399,6 +363,72 @@ section {
   right: 50%;
   transform: translateX(50%);
 }
+#contact {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#contact h1 {
+  font-size: 3rem;
+  color: whitesmoke;
+}
+input[type='text'],
+#email,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='submit'] {
+  border: 1px solid #f0bf6c;
+  background-color: transparent;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+
+input[type='submit']:hover {
+  background-color: #f0bf6c;
+  border: none;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+.container h2 {
+  color: #f0bf6c;
+  font-size: 2rem;
+  margin: 2rem;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 @keyframes backcolor {
   100% {
@@ -422,7 +452,7 @@ section {
   }
 
   body {
-    background: rgba(52, 53, 58, 255);
+    background: #101820ff;
   }
 
   .menu {
