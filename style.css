@@ -36,6 +36,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 1.7rem 0;
+
 }
 
 .logo a {
@@ -65,6 +66,11 @@ nav a:hover {
 }
 #home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./accets/bg.jpeg);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow-x: hidden;
 }
 
 .menu {
@@ -143,7 +149,8 @@ nav a:hover {
   border: 0;
 }
 .cv-btn:hover {
-  background-color: black;
+  background-color: #9da0a3;
+
 }
 
 /*ANIMATION*/
@@ -181,6 +188,7 @@ nav a:hover {
   font-size: 20px;
   margin-top: 2rem;
   margin-left: 2rem;
+  margin-right: 2rem;
   display: flex;
   gap: 1rem;
 }
@@ -195,6 +203,7 @@ nav a:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 #Skills h1 {
   color: #f0bf6c;
@@ -234,6 +243,7 @@ nav a:hover {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 #projects button {
   background-color: #f0bf6c;
@@ -298,6 +308,7 @@ nav a:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 #Experience h1 {
   font-size: 3rem;
@@ -369,6 +380,7 @@ nav a:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 #contact h1 {
   font-size: 3rem;
@@ -476,6 +488,8 @@ input[type='submit']:hover {
     text-align: center;
     left: -100%;
     width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     top: 3rem;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
@@ -500,8 +514,9 @@ input[type='submit']:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem auto;
+    /* margin: 0.5rem auto; */
     height: fit-content;
+    padding: 2rem;
   }
   #About {
     min-height: 100vh;
@@ -646,9 +661,7 @@ input[type='submit']:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  section {
-    margin: 0 1rem;
-  }
+
   .images {
     min-width: 15em;
   }
